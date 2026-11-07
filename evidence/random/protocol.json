@@ -1,0 +1,98 @@
+{
+  "task": "libero_goal/0",
+  "environment_seed": 0,
+  "rng_seeds": [
+    20261107,
+    20261108,
+    20261109
+  ],
+  "policy": "random legal action selection; no language model or task-conditioned logic",
+  "distribution": {
+    "translation_probability": 0.65,
+    "per_axis_metres": [
+      -0.04,
+      0.04
+    ],
+    "translation_interaction_uniform": [
+      "free_space",
+      "precision",
+      "contact_approach"
+    ],
+    "rotation_probability": 0.15,
+    "world_axis_uniform": [
+      "x",
+      "y",
+      "z"
+    ],
+    "rotation_degrees": [
+      -30,
+      30
+    ],
+    "gripper_probability": 0.2,
+    "gripper_uniform": [
+      "open",
+      "close"
+    ]
+  },
+  "budgets": {
+    "max_robot_decisions": 80,
+    "max_model_calls": 200,
+    "max_sim_steps": 10000,
+    "wall_time_s": 21600
+  },
+  "counts": {
+    "20261107": {
+      "translation": 145,
+      "gripper_open": 15,
+      "rotation": 25,
+      "gripper_close": 15
+    },
+    "20261108": {
+      "gripper_close": 27,
+      "translation": 126,
+      "gripper_open": 17,
+      "rotation": 30
+    },
+    "20261109": {
+      "translation": 124,
+      "gripper_open": 23,
+      "rotation": 32,
+      "gripper_close": 21
+    }
+  },
+  "max_pre_generated_proposals": 200,
+  "stopping": "original 80 consumed robot decisions or original sim/wall budget; repeated gripper no-ops are recorded but do not consume robot decisions; 200 finite proposals prevent premature scripted-list exhaustion",
+  "observation_use": "first public robot TCP position initializes nominal waypoint walk; orientation deltas use current public TCP orientation; no RGB/depth/target coordinates used",
+  "initial_public_tcp_m": [
+    -0.21681074205965506,
+    0.009322255046530508,
+    1.1711699101142288
+  ],
+  "workspace_bounds_m": [
+    [
+      -0.6,
+      0.6
+    ],
+    [
+      -0.5,
+      0.5
+    ],
+    [
+      -0.1,
+      1.3
+    ]
+  ],
+  "boundary_margin_m": 0.05,
+  "position_sampling": "nominal waypoint += independent uniform(-.04,.04) per axis, then clip to public workspace minus margin; absolute waypoint command (not measured-state random walk)",
+  "preserved": [
+    "same task/initial-state seed",
+    "same motion ToolSurface implementation",
+    "same perception services available but unused by blind policy",
+    "same controller/motion planner",
+    "Supervisor",
+    "official LIBERO checker"
+  ],
+  "difference": "official scripted runner, mutation-only allowlist; not an untrained neural network",
+  "source": "4d7a26f7c52a18a9f1af292e967aa8b7a526ac61",
+  "pilot_exclusion": "two unbounded delta pilots ended with workspace infra faults; one unbounded and one 80-proposal bounded adapter pilot were stopped; none counted as task failures"
+}

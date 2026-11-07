@@ -1,0 +1,29 @@
+{
+  "agent_session_manifest_sha256": null,
+  "agent_trace_final_event_sha256": null,
+  "agent_trace_sha256": null,
+  "context_audit_sha256": "c282e00f323f5ba97ad5bff9eb963d72218554b5c14cd875906945112d0e33f0",
+  "context_manifest_sha256": "da7858dd04a4495e1dcdda00cc7e1ffec963f8a0a8bb7e2e67c98cb3c6dfc345",
+  "counts": {
+    "actions": 89,
+    "motions": 89,
+    "observations": 90
+  },
+  "evidence_tier": "behavioral",
+  "learning_eligibility": {
+    "eligible": true,
+    "policy": "sealed_policy_visible_control_qualified_episode_v1",
+    "reasons": [],
+    "schema": "ora.learning-eligibility.v1"
+  },
+  "official_success": false,
+  "plan_sha256": "976751533947f7b1301c5fd119c6f1dbcf4052be01707aa7c8ee85a7e8fd7a1d",
+  "policy_state_manifest_sha256": "d94a61fe9eed37c477fc558c43ca42647f47b6756a9bbd89179d2ae7d752f8d0",
+  "reasons": [],
+  "result_sha256": "a9a528a66aab191b77e58812db042d5b946e8a7f2057e70deec9005230a5b768",
+  "run_id": "ora-random-control-final-libero-976751533947--20261107T021431Z",
+  "runtime_metrics_sha256": "2c5a53a2d85b0b2138797016994fe328634826a0a70981ad83b801e74b513479",
+  "schema": "ora.evaluation.v1",
+  "status": "valid",
+  "trace_sha256": "3f4e145710b28eca11fd62b1290f6baf4f521e44b35800b68061df9478d1192c"
+}

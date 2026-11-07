@@ -1,0 +1,1274 @@
+{
+  "schema": "ora.random-control-analysis.v1",
+  "protocol": {
+    "task": "libero_goal/0",
+    "environment_seed": 0,
+    "rng_seeds": [
+      20261107,
+      20261108,
+      20261109
+    ],
+    "policy": "random legal action selection; no language model or task-conditioned logic",
+    "distribution": {
+      "translation_probability": 0.65,
+      "per_axis_metres": [
+        -0.04,
+        0.04
+      ],
+      "translation_interaction_uniform": [
+        "free_space",
+        "precision",
+        "contact_approach"
+      ],
+      "rotation_probability": 0.15,
+      "world_axis_uniform": [
+        "x",
+        "y",
+        "z"
+      ],
+      "rotation_degrees": [
+        -30,
+        30
+      ],
+      "gripper_probability": 0.2,
+      "gripper_uniform": [
+        "open",
+        "close"
+      ]
+    },
+    "budgets": {
+      "max_robot_decisions": 80,
+      "max_model_calls": 200,
+      "max_sim_steps": 10000,
+      "wall_time_s": 21600
+    },
+    "counts": {
+      "20261107": {
+        "translation": 145,
+        "gripper_open": 15,
+        "rotation": 25,
+        "gripper_close": 15
+      },
+      "20261108": {
+        "gripper_close": 27,
+        "translation": 126,
+        "gripper_open": 17,
+        "rotation": 30
+      },
+      "20261109": {
+        "translation": 124,
+        "gripper_open": 23,
+        "rotation": 32,
+        "gripper_close": 21
+      }
+    },
+    "max_pre_generated_proposals": 200,
+    "stopping": "original 80 consumed robot decisions or original sim/wall budget; repeated gripper no-ops are recorded but do not consume robot decisions; 200 finite proposals prevent premature scripted-list exhaustion",
+    "observation_use": "first public robot TCP position initializes nominal waypoint walk; orientation deltas use current public TCP orientation; no RGB/depth/target coordinates used",
+    "initial_public_tcp_m": [
+      -0.21681074205965506,
+      0.009322255046530508,
+      1.1711699101142288
+    ],
+    "workspace_bounds_m": [
+      [
+        -0.6,
+        0.6
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -0.1,
+        1.3
+      ]
+    ],
+    "boundary_margin_m": 0.05,
+    "position_sampling": "nominal waypoint += independent uniform(-.04,.04) per axis, then clip to public workspace minus margin; absolute waypoint command (not measured-state random walk)",
+    "preserved": [
+      "same task/initial-state seed",
+      "same motion ToolSurface implementation",
+      "same perception services available but unused by blind policy",
+      "same controller/motion planner",
+      "Supervisor",
+      "official LIBERO checker"
+    ],
+    "difference": "official scripted runner, mutation-only allowlist; not an untrained neural network",
+    "source": "4d7a26f7c52a18a9f1af292e967aa8b7a526ac61",
+    "pilot_exclusion": "two unbounded delta pilots ended with workspace infra faults; one unbounded and one 80-proposal bounded adapter pilot were stopped; none counted as task failures"
+  },
+  "all_final": true,
+  "runs": [
+    {
+      "rng_seed": 20261107,
+      "run_id": "ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z",
+      "run_dir": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z",
+      "ready": true,
+      "status": {
+        "decisions": 80,
+        "model_calls": 0,
+        "official_success": false,
+        "refused_proposals": 9,
+        "run_id": "ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z",
+        "schema": "ora.run-status.v1",
+        "state": "completed",
+        "termination": "robot_decision_budget",
+        "termination_authority": "experiment_budget",
+        "updated_unix_s": 1794017456.601694
+      },
+      "result": {
+        "auxiliary_failures": [],
+        "behavioral_sample_valid": true,
+        "decisions": 80,
+        "environment_status": {
+          "phase": "running",
+          "policy_visibility": "control_only",
+          "reason": null,
+          "schema": "ora.environment-status.v1",
+          "signals": [],
+          "source": "libero_pro_session",
+          "terminal": false
+        },
+        "finished_unix_s": 1794017456.5716646,
+        "model_calls": 0,
+        "official_success": false,
+        "official_verdict_checker_divergence": null,
+        "operator_video": null,
+        "plan_sha256": "3ad89a7d6bcf2b57278835e2ba0dd0b381bc35083359c923c7db47aa1c554595",
+        "refused_proposals": 9,
+        "run_id": "ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z",
+        "schema": "ora.run-result.v1",
+        "started_unix_s": 1794017283.995304,
+        "state": "completed",
+        "termination": "robot_decision_budget",
+        "termination_authority": "experiment_budget",
+        "verdict": {
+          "abort_reason": "robot_decision_budget",
+          "control_fault_reason": null,
+          "created_unix_s": 1794017456.5444827,
+          "first_termination": null,
+          "official_success": false,
+          "robustness_case": null,
+          "robustness_events": 0,
+          "schema": "ora.libero-pro-official-verdict.v1",
+          "seed": 0,
+          "sim_steps": 1372,
+          "source": "LIBERO environment termination",
+          "suite": "libero_goal",
+          "task_id": 0,
+          "terminated": false,
+          "truncated": false
+        },
+        "wait_accounting": {
+          "dispatched_actions": 89,
+          "last_non_wait_action": {
+            "action": "set_gripper",
+            "action_id": "action-da45beed7134f1e4",
+            "index": 88
+          },
+          "native_actions": null,
+          "schema": "ora.round-wait-accounting.v1",
+          "terminal_wait_calls": 0,
+          "terminal_wait_native_actions": 0,
+          "wait_calls": 0,
+          "wait_native_actions": 0
+        },
+        "wall_duration_clock": "monotonic",
+        "wall_duration_s": 172.576363
+      },
+      "evaluation": {
+        "agent_session_manifest_sha256": null,
+        "agent_trace_final_event_sha256": null,
+        "agent_trace_sha256": null,
+        "context_audit_sha256": "c17c812b83553f88719ff24e5329ba2c4072105a2dbbeb20540563ec9b2726e9",
+        "context_manifest_sha256": "d99fef52ea30bf102a332805025c4c96f5545470e062b976e6d5929c01c6a8f9",
+        "counts": {
+          "actions": 89,
+          "motions": 89,
+          "observations": 90
+        },
+        "evidence_tier": "behavioral",
+        "learning_eligibility": {
+          "eligible": true,
+          "policy": "sealed_policy_visible_control_qualified_episode_v1",
+          "reasons": [],
+          "schema": "ora.learning-eligibility.v1"
+        },
+        "official_success": false,
+        "plan_sha256": "3ad89a7d6bcf2b57278835e2ba0dd0b381bc35083359c923c7db47aa1c554595",
+        "policy_state_manifest_sha256": "36eb6255bee46654cec89b3a2d58091d4a54b60162df7e83e24a2c6a250d7982",
+        "reasons": [],
+        "result_sha256": "68c62fb0b480e5775b8e7cd2db99b5fd287b9423d59fd3edd43c3f58ddbd130a",
+        "run_id": "ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z",
+        "runtime_metrics_sha256": "839f60c8562c4f954cdd2d9626ef96c01adf2431490fbcd2101ece0a7cbea4b3",
+        "schema": "ora.evaluation.v1",
+        "status": "valid",
+        "trace_sha256": "e2ddcd63a6df8b792641becb1e0ace97f1e1f38ad11899c25e720e84208227ae"
+      },
+      "trace": {
+        "event_counts": {
+          "run_started": 1,
+          "reset": 1,
+          "observation": 90,
+          "environment_status": 90,
+          "tool_result": 89,
+          "action_submitted": 89,
+          "motion_receipt": 89,
+          "stagnation_observation": 89,
+          "termination_authority_decision": 1,
+          "run_finished": 1
+        },
+        "tool_proposals": 89,
+        "action_submitted": 89,
+        "motion_receipts": 89,
+        "consumed_decision_receipts": 80,
+        "matches_result_decisions": true,
+        "nonconsumed_receipts": 9,
+        "nonconsumed_details": [
+          {
+            "event_line": 49,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.98749986736334,
+              "measured_opening_normalized": 0.9998437483420417,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 85,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.98292608265298,
+              "measured_opening_normalized": 0.9997865760331622,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 109,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.9880218053187,
+              "measured_opening_normalized": 0.9998502725664836,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 151,
+            "action": "move_pose",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": null
+          },
+          {
+            "event_line": 193,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 1.5734216335748559,
+              "measured_opening_normalized": 0.0196677704196857,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 313,
+            "action": "move_pose",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": null
+          },
+          {
+            "event_line": 343,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.34649525384269,
+              "measured_opening_normalized": 0.9918311906730336,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 421,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 1.0233124712289854,
+              "measured_opening_normalized": 0.012791405890362319,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 487,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.34183828596483,
+              "measured_opening_normalized": 0.9917729785745604,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          }
+        ],
+        "nonconsumed_by_action": {
+          "set_gripper": 7,
+          "move_pose": 2
+        },
+        "nonconsumed_all_zero_sim_steps": true,
+        "receipt_actions": {
+          "move_pose": 76,
+          "set_gripper": 13
+        },
+        "execution_status": {
+          "reached": 89
+        },
+        "tool_error_codes": {},
+        "receipt_failure_codes": {},
+        "recorded_format_error_count": 0,
+        "final_receipt_sim_steps_total": 1372,
+        "control_health_codes": {},
+        "actual_motion": {
+          "translation_gt_1mm": 74,
+          "rotation_gt_1deg": 7,
+          "gripper_normalized_change_gt_0_01": 9,
+          "translation_path_m": 2.419935,
+          "max_single_translation_m": 0.05558,
+          "pose_samples": 89,
+          "measured_tcp_bbox_m": [
+            [
+              -0.30800863312302657,
+              -0.05354366728775511
+            ],
+            [
+              -0.0059983613110402845,
+              0.3060110821021385
+            ],
+            [
+              1.105093421601115,
+              1.2511341802157752
+            ]
+          ]
+        },
+        "moved_receipt_event_lines": [
+          7,
+          13,
+          19,
+          25,
+          31,
+          37,
+          43,
+          55,
+          61,
+          67,
+          73,
+          79,
+          91,
+          97,
+          103,
+          115,
+          121,
+          127,
+          133,
+          139,
+          145,
+          157,
+          163,
+          169,
+          175,
+          187,
+          199,
+          205,
+          211,
+          217,
+          223,
+          229,
+          235,
+          241,
+          247,
+          253,
+          265,
+          271,
+          277,
+          283,
+          289,
+          295,
+          301,
+          307,
+          319,
+          325,
+          331,
+          337,
+          349,
+          355,
+          361,
+          373,
+          379,
+          385,
+          391,
+          397,
+          403,
+          409,
+          415,
+          427,
+          433,
+          439,
+          445,
+          457,
+          463,
+          469,
+          475,
+          481,
+          493,
+          499,
+          505,
+          511,
+          517,
+          523
+        ]
+      },
+      "evidence": {
+        "result.json": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z/result.json",
+        "evaluation.json": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z/evaluation.json",
+        "events.jsonl": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z/events.jsonl"
+      }
+    },
+    {
+      "rng_seed": 20261108,
+      "run_id": "ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+      "run_dir": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+      "ready": true,
+      "status": {
+        "decisions": 80,
+        "model_calls": 0,
+        "official_success": false,
+        "refused_proposals": 8,
+        "run_id": "ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+        "schema": "ora.run-status.v1",
+        "state": "completed",
+        "termination": "robot_decision_budget",
+        "termination_authority": "experiment_budget",
+        "updated_unix_s": 1794017645.755837
+      },
+      "result": {
+        "auxiliary_failures": [],
+        "behavioral_sample_valid": true,
+        "decisions": 80,
+        "environment_status": {
+          "phase": "running",
+          "policy_visibility": "control_only",
+          "reason": null,
+          "schema": "ora.environment-status.v1",
+          "signals": [],
+          "source": "libero_pro_session",
+          "terminal": false
+        },
+        "finished_unix_s": 1794017645.7318726,
+        "model_calls": 0,
+        "official_success": false,
+        "official_verdict_checker_divergence": null,
+        "operator_video": null,
+        "plan_sha256": "91fe71fa6df9247152d44e814d0187b356a1bc954ad46a68646d614f923462e2",
+        "refused_proposals": 8,
+        "run_id": "ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+        "schema": "ora.run-result.v1",
+        "started_unix_s": 1794017483.7296064,
+        "state": "completed",
+        "termination": "robot_decision_budget",
+        "termination_authority": "experiment_budget",
+        "verdict": {
+          "abort_reason": "robot_decision_budget",
+          "control_fault_reason": null,
+          "created_unix_s": 1794017645.6967978,
+          "first_termination": null,
+          "official_success": false,
+          "robustness_case": null,
+          "robustness_events": 0,
+          "schema": "ora.libero-pro-official-verdict.v1",
+          "seed": 0,
+          "sim_steps": 1499,
+          "source": "LIBERO environment termination",
+          "suite": "libero_goal",
+          "task_id": 0,
+          "terminated": false,
+          "truncated": false
+        },
+        "wait_accounting": {
+          "dispatched_actions": 88,
+          "last_non_wait_action": {
+            "action": "move_pose",
+            "action_id": "action-00aa03abfbb4ab29",
+            "index": 87
+          },
+          "native_actions": null,
+          "schema": "ora.round-wait-accounting.v1",
+          "terminal_wait_calls": 0,
+          "terminal_wait_native_actions": 0,
+          "wait_calls": 0,
+          "wait_native_actions": 0
+        },
+        "wall_duration_clock": "monotonic",
+        "wall_duration_s": 162.002269
+      },
+      "evaluation": {
+        "agent_session_manifest_sha256": null,
+        "agent_trace_final_event_sha256": null,
+        "agent_trace_sha256": null,
+        "context_audit_sha256": "d47aa2a7682286df8e07c77169548703d819b03ba9d7041112b7c8286b42ea4a",
+        "context_manifest_sha256": "2812c04220ffaa5c29192b5e44000c7b474d27b226776205a37da0402eeb7415",
+        "counts": {
+          "actions": 88,
+          "motions": 88,
+          "observations": 89
+        },
+        "evidence_tier": "behavioral",
+        "learning_eligibility": {
+          "eligible": true,
+          "policy": "sealed_policy_visible_control_qualified_episode_v1",
+          "reasons": [],
+          "schema": "ora.learning-eligibility.v1"
+        },
+        "official_success": false,
+        "plan_sha256": "91fe71fa6df9247152d44e814d0187b356a1bc954ad46a68646d614f923462e2",
+        "policy_state_manifest_sha256": "d73376340c7153eb6e9b7a94d109755a0cdd3f42d33b1ce5f89d54ecf60ae6cd",
+        "reasons": [],
+        "result_sha256": "8584e426ff3859444bec6025809ea367a738a0ee6aa68f39ee2480f0ad86edf8",
+        "run_id": "ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+        "runtime_metrics_sha256": "d92d3ce6db396d2d6fc9f0c0e671ef4ac5fb2fb1c54c43d5670f7ea9ec94dbd2",
+        "schema": "ora.evaluation.v1",
+        "status": "valid",
+        "trace_sha256": "6b6fb0412c6e345873767ecebf38813948e197b6f1a4b32ec271d03fe57144e1"
+      },
+      "trace": {
+        "event_counts": {
+          "run_started": 1,
+          "reset": 1,
+          "observation": 89,
+          "environment_status": 89,
+          "tool_result": 88,
+          "action_submitted": 88,
+          "motion_receipt": 88,
+          "stagnation_observation": 88,
+          "termination_authority_decision": 1,
+          "run_finished": 1
+        },
+        "tool_proposals": 88,
+        "action_submitted": 88,
+        "motion_receipts": 88,
+        "consumed_decision_receipts": 80,
+        "matches_result_decisions": true,
+        "nonconsumed_receipts": 8,
+        "nonconsumed_details": [
+          {
+            "event_line": 13,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 2.349124666215259,
+              "measured_opening_normalized": 0.02936405832769074,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 85,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 1.7043552871669776,
+              "measured_opening_normalized": 0.02130444108958722,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 91,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 1.7043552871669776,
+              "measured_opening_normalized": 0.02130444108958722,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 103,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 0.9997891120448101,
+              "measured_opening_normalized": 0.012497363900560126,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 247,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.92782898722406,
+              "measured_opening_normalized": 0.9990978623403007,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 271,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 0.9997874910953808,
+              "measured_opening_normalized": 0.01249734363869226,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 337,
+            "action": "move_pose",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": null
+          },
+          {
+            "event_line": 517,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 0.0,
+              "measured_aperture_mm": 1.0325995316887142,
+              "measured_opening_normalized": 0.012907494146108927,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          }
+        ],
+        "nonconsumed_by_action": {
+          "set_gripper": 7,
+          "move_pose": 1
+        },
+        "nonconsumed_all_zero_sim_steps": true,
+        "receipt_actions": {
+          "set_gripper": 21,
+          "move_pose": 67
+        },
+        "execution_status": {
+          "reached": 88
+        },
+        "tool_error_codes": {},
+        "receipt_failure_codes": {},
+        "recorded_format_error_count": 0,
+        "final_receipt_sim_steps_total": 1499,
+        "control_health_codes": {},
+        "actual_motion": {
+          "translation_gt_1mm": 65,
+          "rotation_gt_1deg": 13,
+          "gripper_normalized_change_gt_0_01": 22,
+          "translation_path_m": 1.889979,
+          "max_single_translation_m": 0.057406,
+          "pose_samples": 88,
+          "measured_tcp_bbox_m": [
+            [
+              -0.2958783120475139,
+              -0.06477925926699474
+            ],
+            [
+              0.009292806587669252,
+              0.2471960464447145
+            ],
+            [
+              1.1112581714816265,
+              1.2520353286434833
+            ]
+          ]
+        },
+        "moved_receipt_event_lines": [
+          19,
+          31,
+          37,
+          49,
+          55,
+          61,
+          79,
+          97,
+          121,
+          133,
+          139,
+          145,
+          151,
+          157,
+          163,
+          169,
+          175,
+          181,
+          187,
+          193,
+          199,
+          205,
+          211,
+          217,
+          223,
+          229,
+          235,
+          241,
+          253,
+          265,
+          277,
+          283,
+          295,
+          307,
+          313,
+          319,
+          325,
+          331,
+          343,
+          349,
+          355,
+          361,
+          367,
+          373,
+          379,
+          385,
+          391,
+          397,
+          403,
+          409,
+          415,
+          421,
+          427,
+          433,
+          439,
+          445,
+          451,
+          457,
+          463,
+          469,
+          475,
+          481,
+          499,
+          505,
+          511,
+          529
+        ]
+      },
+      "evidence": {
+        "result.json": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z/result.json",
+        "evaluation.json": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z/evaluation.json",
+        "events.jsonl": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z/events.jsonl"
+      }
+    },
+    {
+      "rng_seed": 20261109,
+      "run_id": "ora-random-control-final-libero-976751533947--20261107T021431Z",
+      "run_dir": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-976751533947--20261107T021431Z",
+      "ready": true,
+      "status": {
+        "decisions": 80,
+        "model_calls": 0,
+        "official_success": false,
+        "refused_proposals": 9,
+        "run_id": "ora-random-control-final-libero-976751533947--20261107T021431Z",
+        "schema": "ora.run-status.v1",
+        "state": "completed",
+        "termination": "robot_decision_budget",
+        "termination_authority": "experiment_budget",
+        "updated_unix_s": 1794017844.2322226
+      },
+      "result": {
+        "auxiliary_failures": [],
+        "behavioral_sample_valid": true,
+        "decisions": 80,
+        "environment_status": {
+          "phase": "running",
+          "policy_visibility": "control_only",
+          "reason": null,
+          "schema": "ora.environment-status.v1",
+          "signals": [],
+          "source": "libero_pro_session",
+          "terminal": false
+        },
+        "finished_unix_s": 1794017844.1727736,
+        "model_calls": 0,
+        "official_success": false,
+        "official_verdict_checker_divergence": null,
+        "operator_video": null,
+        "plan_sha256": "976751533947f7b1301c5fd119c6f1dbcf4052be01707aa7c8ee85a7e8fd7a1d",
+        "refused_proposals": 9,
+        "run_id": "ora-random-control-final-libero-976751533947--20261107T021431Z",
+        "schema": "ora.run-result.v1",
+        "started_unix_s": 1794017671.6657965,
+        "state": "completed",
+        "termination": "robot_decision_budget",
+        "termination_authority": "experiment_budget",
+        "verdict": {
+          "abort_reason": "robot_decision_budget",
+          "control_fault_reason": null,
+          "created_unix_s": 1794017844.140134,
+          "first_termination": null,
+          "official_success": false,
+          "robustness_case": null,
+          "robustness_events": 0,
+          "schema": "ora.libero-pro-official-verdict.v1",
+          "seed": 0,
+          "sim_steps": 1437,
+          "source": "LIBERO environment termination",
+          "suite": "libero_goal",
+          "task_id": 0,
+          "terminated": false,
+          "truncated": false
+        },
+        "wait_accounting": {
+          "dispatched_actions": 89,
+          "last_non_wait_action": {
+            "action": "move_pose",
+            "action_id": "action-8d1ea9c6aa91f629",
+            "index": 88
+          },
+          "native_actions": null,
+          "schema": "ora.round-wait-accounting.v1",
+          "terminal_wait_calls": 0,
+          "terminal_wait_native_actions": 0,
+          "wait_calls": 0,
+          "wait_native_actions": 0
+        },
+        "wall_duration_clock": "monotonic",
+        "wall_duration_s": 172.50698
+      },
+      "evaluation": {
+        "agent_session_manifest_sha256": null,
+        "agent_trace_final_event_sha256": null,
+        "agent_trace_sha256": null,
+        "context_audit_sha256": "c282e00f323f5ba97ad5bff9eb963d72218554b5c14cd875906945112d0e33f0",
+        "context_manifest_sha256": "da7858dd04a4495e1dcdda00cc7e1ffec963f8a0a8bb7e2e67c98cb3c6dfc345",
+        "counts": {
+          "actions": 89,
+          "motions": 89,
+          "observations": 90
+        },
+        "evidence_tier": "behavioral",
+        "learning_eligibility": {
+          "eligible": true,
+          "policy": "sealed_policy_visible_control_qualified_episode_v1",
+          "reasons": [],
+          "schema": "ora.learning-eligibility.v1"
+        },
+        "official_success": false,
+        "plan_sha256": "976751533947f7b1301c5fd119c6f1dbcf4052be01707aa7c8ee85a7e8fd7a1d",
+        "policy_state_manifest_sha256": "d94a61fe9eed37c477fc558c43ca42647f47b6756a9bbd89179d2ae7d752f8d0",
+        "reasons": [],
+        "result_sha256": "a9a528a66aab191b77e58812db042d5b946e8a7f2057e70deec9005230a5b768",
+        "run_id": "ora-random-control-final-libero-976751533947--20261107T021431Z",
+        "runtime_metrics_sha256": "2c5a53a2d85b0b2138797016994fe328634826a0a70981ad83b801e74b513479",
+        "schema": "ora.evaluation.v1",
+        "status": "valid",
+        "trace_sha256": "3f4e145710b28eca11fd62b1290f6baf4f521e44b35800b68061df9478d1192c"
+      },
+      "trace": {
+        "event_counts": {
+          "run_started": 1,
+          "reset": 1,
+          "observation": 90,
+          "environment_status": 90,
+          "tool_result": 89,
+          "action_submitted": 89,
+          "motion_receipt": 89,
+          "stagnation_observation": 89,
+          "termination_authority_decision": 1,
+          "run_finished": 1
+        },
+        "tool_proposals": 89,
+        "action_submitted": 89,
+        "motion_receipts": 89,
+        "consumed_decision_receipts": 80,
+        "matches_result_decisions": true,
+        "nonconsumed_receipts": 9,
+        "nonconsumed_details": [
+          {
+            "event_line": 25,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.71080530252596,
+              "measured_opening_normalized": 0.9963850662815744,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 175,
+            "action": "move_pose",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": null
+          },
+          {
+            "event_line": 187,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.5678825497824,
+              "measured_opening_normalized": 0.9945985318722799,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 229,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.55737463785233,
+              "measured_opening_normalized": 0.9944671829731543,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 247,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.56806512185263,
+              "measured_opening_normalized": 0.9946008140231579,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 253,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.56806512185263,
+              "measured_opening_normalized": 0.9946008140231579,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 301,
+            "action": "set_gripper",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": {
+              "claim_boundary": "stalled_before_target means the jaws stopped short of the commanded opening; it is consistent with an object between the fingers and is not proof of a grasp",
+              "commanded_opening_normalized": 1.0,
+              "measured_aperture_mm": 79.55354266898445,
+              "measured_opening_normalized": 0.9944192833623056,
+              "seconds_used": 0.0,
+              "state": "reached_target",
+              "ticks_budget": 80,
+              "ticks_used": 0
+            }
+          },
+          {
+            "event_line": 391,
+            "action": "move_pose",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": null
+          },
+          {
+            "event_line": 457,
+            "action": "move_pose",
+            "state_changed": false,
+            "steps_used": 0,
+            "translation_m": 0.0,
+            "rotation_rad": 0.0,
+            "gripper_outcome": null
+          }
+        ],
+        "nonconsumed_by_action": {
+          "set_gripper": 6,
+          "move_pose": 3
+        },
+        "nonconsumed_all_zero_sim_steps": true,
+        "receipt_actions": {
+          "move_pose": 74,
+          "set_gripper": 15
+        },
+        "execution_status": {
+          "reached": 89
+        },
+        "tool_error_codes": {},
+        "receipt_failure_codes": {},
+        "recorded_format_error_count": 0,
+        "final_receipt_sim_steps_total": 1437,
+        "control_health_codes": {},
+        "actual_motion": {
+          "translation_gt_1mm": 70,
+          "rotation_gt_1deg": 14,
+          "gripper_normalized_change_gt_0_01": 12,
+          "translation_path_m": 2.092029,
+          "max_single_translation_m": 0.061289,
+          "pose_samples": 89,
+          "measured_tcp_bbox_m": [
+            [
+              -0.2978012692497353,
+              -0.13479821225770433
+            ],
+            [
+              -0.1696708833146567,
+              0.056947646268196074
+            ],
+            [
+              1.0339823334915512,
+              1.2485643251690028
+            ]
+          ]
+        },
+        "moved_receipt_event_lines": [
+          7,
+          13,
+          19,
+          31,
+          37,
+          43,
+          49,
+          55,
+          61,
+          67,
+          73,
+          79,
+          85,
+          91,
+          97,
+          103,
+          109,
+          115,
+          121,
+          127,
+          133,
+          139,
+          145,
+          151,
+          157,
+          163,
+          169,
+          181,
+          193,
+          199,
+          205,
+          211,
+          217,
+          223,
+          235,
+          241,
+          259,
+          265,
+          271,
+          277,
+          283,
+          289,
+          295,
+          319,
+          325,
+          331,
+          337,
+          343,
+          349,
+          355,
+          361,
+          367,
+          373,
+          397,
+          403,
+          409,
+          421,
+          427,
+          433,
+          469,
+          475,
+          481,
+          487,
+          493,
+          499,
+          505,
+          511,
+          517,
+          523,
+          529,
+          535
+        ]
+      },
+      "evidence": {
+        "result.json": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-976751533947--20261107T021431Z/result.json",
+        "evaluation.json": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-976751533947--20261107T021431Z/evaluation.json",
+        "events.jsonl": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-976751533947--20261107T021431Z/events.jsonl"
+      }
+    }
+  ],
+  "scope": "three predeclared RNG seeds on one fixed environment initial state; pilots excluded, no resampling or replacement of invalid final runs",
+  "definitions": {
+    "tool_proposals": "events.jsonl tool_result count; final scripted policy uses mutation-only calls",
+    "consumed_decisions": "outer motion_receipt.consumed_decision; do not use inner record.consumed",
+    "nonconsumed": "recorded zero-step actions/no-ops; official refused_proposals includes these, not format errors",
+    "physical_motion": "right TCP before/after; translation >0.001m and rotation >1degree; gripper changes >0.01 normalized across all receipts",
+    "interpretation": "three predefined random-action seeds on one fixed task initial state; evidence against this bounded blind policy, not an attribution of all capability to the LLM"
+  },
+  "aggregate": {
+    "runs": 3,
+    "valid_evaluations": 3,
+    "official_successes": 0,
+    "official_failures": 3,
+    "invalid_or_unknown_outcomes": 0,
+    "tool_proposals": 266,
+    "consumed_decisions": 240,
+    "nonconsumed_receipts": 26,
+    "translation_gt_1mm": 209,
+    "rotation_gt_1deg": 34
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "currency": "CNY",
+  "basis": "API returned usage × official off-peak list price; not account invoice",
+  "episode": {
+    "model_calls": 16,
+    "input_tokens": 1200108,
+    "cache_hit_input_tokens": 1055232,
+    "output_tokens_including_reasoning": 49328,
+    "estimated_cny": 0.36329264
+  },
+  "preflight": {
+    "model_calls": 4,
+    "input_tokens": 759,
+    "cache_hit_input_tokens": 0,
+    "output_tokens_including_reasoning": 328,
+    "estimated_cny": 0.002071
+  },
+  "total_estimated_cny": 0.36536364,
+  "rates_cny_per_million": {
+    "cache_hit_input": 0.02,
+    "cache_miss_input": 1,
+    "output": 4
+  },
+  "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/"
+}

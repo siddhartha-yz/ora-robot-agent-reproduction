@@ -1,0 +1,82 @@
+{
+  "auxiliary_failures": [],
+  "behavioral_sample_valid": true,
+  "decisions": 7,
+  "environment_status": {
+    "phase": "terminal",
+    "policy_visibility": "control_only",
+    "reason": "official_success",
+    "schema": "ora.environment-status.v1",
+    "signals": [],
+    "source": "libero_pro_session",
+    "terminal": true
+  },
+  "finished_unix_s": 1794016181.78812,
+  "model_calls": 16,
+  "official_success": true,
+  "official_verdict_checker_divergence": null,
+  "operator_video": null,
+  "plan_sha256": "d8c68723d9b84312aa79e3ddc33c1daeef1f678e1623cfce0dc4c346a01625a6",
+  "policy_finish": {
+    "abort_admission": null,
+    "abort_infrastructure_signal_count": null,
+    "category": null,
+    "contract": "policy_finish_outcomes_v2",
+    "ended_round": false,
+    "outcome": "success",
+    "reason": "check_task returned task_success=true. The agentview and wrist camera images show the middle drawer pulled out of the cabinet (its box and top face protruding), after the gripper grasped the middle handle rod and pulled it in +y; the gripper aperture held at ~17.4 mm throughout the pull, confirming retention.",
+    "record_sha256": "e97f094919c96b12f0c613321334bd51a9e4fd846567564574c15ddb3b7d5d4e",
+    "schema": "ora.policy-finish-summary.v1",
+    "untried_candidates": null
+  },
+  "refused_proposals": 0,
+  "run_id": "ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+  "schema": "ora.run-result.v1",
+  "started_unix_s": 1794015793.0478554,
+  "state": "completed",
+  "termination": "trusted_runtime_boundary",
+  "termination_authority": "environment",
+  "verdict": {
+    "abort_reason": null,
+    "control_fault_reason": null,
+    "created_unix_s": 1794016175.4964402,
+    "first_termination": {
+      "action_id": "action-ffa8f85416078889",
+      "action_sequence": 6,
+      "controller": "JOINT_POSITION",
+      "round_index": 0,
+      "schema": "ora.libero-first-termination.v1",
+      "sim_step": 498,
+      "source": "LIBERO environment termination",
+      "terminated": true,
+      "truncated": false
+    },
+    "official_success": true,
+    "robustness_case": null,
+    "robustness_events": 0,
+    "schema": "ora.libero-pro-official-verdict.v1",
+    "seed": 0,
+    "sim_steps": 498,
+    "source": "LIBERO environment termination",
+    "suite": "libero_goal",
+    "task_id": 0,
+    "terminated": true,
+    "truncated": false
+  },
+  "wait_accounting": {
+    "dispatched_actions": 7,
+    "last_non_wait_action": {
+      "action": "move_pose",
+      "action_id": "action-ffa8f85416078889",
+      "index": 6
+    },
+    "native_actions": null,
+    "schema": "ora.round-wait-accounting.v1",
+    "terminal_wait_calls": 0,
+    "terminal_wait_native_actions": 0,
+    "wait_calls": 0,
+    "wait_native_actions": 0
+  },
+  "wall_duration_clock": "monotonic",
+  "wall_duration_s": 388.740265
+}

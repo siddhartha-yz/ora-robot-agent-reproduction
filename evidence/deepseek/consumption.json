@@ -1,0 +1,228 @@
+{
+  "schema": "ora.single-trial-consumption.v1",
+  "run_id": "ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+  "run_dir": "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+  "official_success": true,
+  "official_report": {
+    "attempts": [
+      {
+        "behavioral_sample_valid": true,
+        "decisions": 7,
+        "ending": "success_latch",
+        "model_calls": 16,
+        "official_success": true,
+        "policy_finish": {
+          "category": null,
+          "outcome": "success",
+          "reason": "check_task returned task_success=true. The agentview and wrist camera images show the middle drawer pulled out of the cabinet (its box and top face protruding), after the gripper grasped the middle handle rod and pulled it in +y; the gripper aperture held at ~17.4 mm throughout the pull, confirming retention.",
+          "source": "round_record"
+        },
+        "refused_proposals": 0,
+        "round_index": 0,
+        "state": "completed",
+        "synthesized": false,
+        "termination": "trusted_runtime_boundary",
+        "termination_authority": "environment",
+        "upstream_ending_condition": null,
+        "valid_attempt": true,
+        "wall_minutes": 6.479004
+      }
+    ],
+    "backend": "libero_pro",
+    "cell_id": "lb-libero_goal-t00-s0",
+    "cohort_id": "ora-run-libero-20261107T014229Z",
+    "context": {
+      "inline_images_per_request": {
+        "count": 16,
+        "max": 23.0,
+        "mean": 11.5,
+        "min": 2.0,
+        "p50": 10.0,
+        "p95": 21.5,
+        "total": 184.0
+      },
+      "observation_text_bytes": {
+        "count": 16,
+        "max": 1924.0,
+        "mean": 1916.5625,
+        "min": 1907.0,
+        "p50": 1924.0,
+        "p95": 1924.0,
+        "total": 30665.0
+      },
+      "request_input_tokens": {
+        "count": 16,
+        "max": 107089.0,
+        "mean": 75006.75,
+        "min": 22671.0,
+        "p50": 80171.5,
+        "p95": 106801.75,
+        "total": 1200108.0
+      }
+    },
+    "correction": null,
+    "cost": {
+      "components_usd": null,
+      "label": "api_equivalent_usd",
+      "model": "deepseek-flash",
+      "priced": false,
+      "usd": null
+    },
+    "effort": {
+      "decisions": 7,
+      "model_calls": 16,
+      "provider_responses": 16,
+      "refused_proposals": 0,
+      "refused_tool_call_total": 0,
+      "refused_tool_calls": {},
+      "tool_calls": {
+        "check_task": 1,
+        "compute": 1,
+        "finish_episode": 1,
+        "geometry_query": 2,
+        "grasp_plan": 1,
+        "mark_point": 1,
+        "move_pose": 1,
+        "move_to": 5,
+        "set_gripper": 1,
+        "vision_ground": 2
+      },
+      "wall_minutes": 6.479004
+    },
+    "evaluation": {
+      "learning_eligible": true,
+      "reason_count": 0,
+      "reasons": [],
+      "status": "valid"
+    },
+    "experiment": null,
+    "learning_eligible": true,
+    "model": "deepseek-flash",
+    "namespace": "<ORA_ROOT>/outputs/ora-interactive",
+    "planned_rounds": 1,
+    "provider_profile": "deepseek_flash_openai_low_16k_v1",
+    "reasoning_effort": "low",
+    "run_dir": "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+    "run_id": "ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+    "sealed": true,
+    "state": "completed",
+    "task": "libero_goal-t00",
+    "termination": "trusted_runtime_boundary",
+    "termination_authority": "environment",
+    "tokens": {
+      "cache_share": 0.879281,
+      "cached_input": 1055232,
+      "input": 1200108,
+      "output": 49328,
+      "reasoning_output": 47247,
+      "responses": 16,
+      "responses_without_usage": 0,
+      "source": "agent_events_provider_response",
+      "uncached_input": 144876
+    },
+    "validity": "valid",
+    "warnings": []
+  },
+  "provider_identity": {
+    "response_models": [
+      "deepseek-flash"
+    ],
+    "system_fingerprints": [
+      "bc19ba97cbe016479903222bb1578db6"
+    ],
+    "response_artifact_count": 16,
+    "version_scope": "only the API-returned identifier; not an inferred weight revision"
+  },
+  "usage_based_cny_estimate": {
+    "schema": "ora.viewer-provider-cost-estimate.v1",
+    "run_id": "ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+    "model": "deepseek-flash",
+    "run_date": "2026-11-07",
+    "basis": "official_api_list_price_equivalent",
+    "status": "estimated",
+    "measurement": "sealed_runtime_metrics",
+    "price": {
+      "price_id": "deepseek-flash-cny-off-peak-2026-11-07",
+      "provider": "DeepSeek",
+      "model": "deepseek-flash",
+      "model_aliases": [
+        "deepseek-flash",
+        "DeepSeek-V4.1-Flash"
+      ],
+      "currency": "CNY",
+      "unit_tokens": 1000000,
+      "rates_per_million_tokens": {
+        "cache_hit_input": 0.02,
+        "cache_miss_input": 1.0,
+        "output": 4.0
+      },
+      "effective_date": "2026-11-07",
+      "retrieved_date": "2026-11-07",
+      "source_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "scope": "operator-supplied official off-peak snapshot; not account billing"
+    },
+    "tokens": {
+      "main": {
+        "input_tokens": 1200108,
+        "cache_read_input_tokens": 1055232,
+        "uncached_input_tokens": 144876,
+        "output_tokens": 49328
+      },
+      "auxiliary": {
+        "kind": "context_compactor",
+        "calls": 0,
+        "input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "uncached_input_tokens": 0,
+        "output_tokens": 0
+      },
+      "total": {
+        "input_tokens": 1200108,
+        "cache_read_input_tokens": 1055232,
+        "uncached_input_tokens": 144876,
+        "output_tokens": 49328
+      }
+    },
+    "cost": {
+      "currency": "CNY",
+      "cache_hit_input": 0.021105,
+      "cache_miss_input": 0.144876,
+      "output": 0.197312,
+      "total": 0.363293
+    }
+  },
+  "billing_scope": "recorded run usage, including context-compactor calls; not invoice deduction; assumes all usage qualifies for the supplied off-peak rates; excludes separate preflight/probe requests and unreported partial/error responses",
+  "responses_without_usage": 0,
+  "budget": {
+    "target_cny": 5.0,
+    "warn_at_cny": 3.5,
+    "recorded_usage_estimate_cny": 0.363293,
+    "estimated_remaining_cny": 4.636707,
+    "warning": false,
+    "one_full_context_max_output_call_cny": 1.114112,
+    "is_hard_spend_limit": false
+  },
+  "evidence": {
+    "canonical_streams": [
+      "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z/events.jsonl",
+      "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z/agent-events.jsonl",
+      "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z/seal.json"
+    ],
+    "capture_and_controller_manifests": [
+      {
+        "path": "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z/native/controller-replay/manifest.json",
+        "schema": "ora.controller-replay-manifest.v2",
+        "status": null,
+        "final": null
+      },
+      {
+        "path": "<ORA_ROOT>/outputs/ora-interactive/runs/ora-interactive-libero-d8c68723d9b8--20261107T014312Z/native/execution-capture/manifest.json",
+        "schema": "ora.execution-capture-manifest.v1",
+        "status": "complete",
+        "final": null
+      }
+    ],
+    "existing_derived_mp4": [],
+    "derived_root": "<ORA_ROOT>/outputs/ora-interactive/viewer-derived/ora-interactive-libero-d8c68723d9b8--20261107T014312Z"
+  }
+}

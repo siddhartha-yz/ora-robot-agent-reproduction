@@ -1,0 +1,415 @@
+{
+  "cohorts": [
+    {
+      "attempts": 1,
+      "cohorts": [
+        "ora-random-control-final-20261107"
+      ],
+      "context": {
+        "inline_images_per_request": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        },
+        "observation_text_bytes": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        },
+        "request_input_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        }
+      },
+      "cost": {
+        "label": "api_equivalent_usd",
+        "priced_runs": 0,
+        "unpriced_models": [
+          "random-legal-actions-v1-rng20261108"
+        ],
+        "unpriced_runs": 1,
+        "usd": null
+      },
+      "effort": {
+        "decisions": 80,
+        "model_calls": 0,
+        "provider_responses": 0,
+        "refused_proposals": 8,
+        "refused_tool_call_total": 0,
+        "refused_tool_calls": {},
+        "tool_calls": {},
+        "wall_minutes": 2.700038
+      },
+      "endings": {
+        "decision_budget": 1
+      },
+      "excluded_attempts": {},
+      "give_up_categories": {},
+      "key": {
+        "cohort_id": "ora-random-control-final-20261107"
+      },
+      "learning_eligible_runs": 1,
+      "models": [
+        "random-legal-actions-v1-rng20261108"
+      ],
+      "policy_finish": {},
+      "runs": 1,
+      "success_rate": 0.0,
+      "successes": 0,
+      "tokens": {
+        "cache_share": null,
+        "cached_input": null,
+        "input": null,
+        "output": null,
+        "reasoning_output": null,
+        "runs_without_tokens": 1,
+        "uncached_input": null
+      },
+      "valid_attempts": 1,
+      "valid_endings": {
+        "decision_budget": 1
+      },
+      "validity": {
+        "valid": 1
+      }
+    }
+  ],
+  "corrections": [],
+  "definitions": {
+    "attempt": "one round of a run; a session that stopped before its planned rounds keeps the round in flight",
+    "cache_share": "cached_input / input over provider-reported usage",
+    "cost": "API-equivalent USD: (input - cached_input) x input price + cached_input x cached price + output x output price, per million tokens; output includes reasoning; not what the run paid",
+    "ending_classes": [
+      "success_latch",
+      "failure_latch",
+      "native_action_limit",
+      "episode_end",
+      "environment_end",
+      "policy_finish",
+      "decision_budget",
+      "model_call_budget",
+      "wall_time_budget",
+      "simulation_step_cap",
+      "memory_horizon",
+      "operator_interrupt",
+      "infrastructure",
+      "in_progress",
+      "other"
+    ],
+    "success": "official_success true on a valid attempt",
+    "valid_attempt": "run validity is valid (evaluation status after any post-seal correction), the round has an official Boolean and its behavioral sample is not marked invalid"
+  },
+  "errors": [],
+  "inputs": {
+    "run_dirs": [
+      "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "label": "api_equivalent",
+    "path": "<ORA_ROOT>/ora/orchestrator/run_report_pricing.yaml",
+    "priced_models": [
+      "gpt-6-astra",
+      "gpt-6.1-sol"
+    ],
+    "sha256": "fdfc7e855f28436b54acec2f3b42e2b4b4182060042ccc6d1263fd0df32ad88c",
+    "unit": "per_million_tokens"
+  },
+  "runs": [
+    {
+      "attempts": [
+        {
+          "behavioral_sample_valid": true,
+          "decisions": 80,
+          "ending": "decision_budget",
+          "model_calls": 0,
+          "official_success": false,
+          "policy_finish": null,
+          "refused_proposals": 8,
+          "round_index": 0,
+          "state": "completed",
+          "synthesized": false,
+          "termination": "robot_decision_budget",
+          "termination_authority": "experiment_budget",
+          "upstream_ending_condition": null,
+          "valid_attempt": true,
+          "wall_minutes": 2.700038
+        }
+      ],
+      "backend": "libero_pro",
+      "cell_id": "goal0-rng20261108",
+      "cohort_id": "ora-random-control-final-20261107",
+      "context": {
+        "inline_images_per_request": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        },
+        "observation_text_bytes": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        },
+        "request_input_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        }
+      },
+      "correction": null,
+      "cost": {
+        "components_usd": null,
+        "label": "api_equivalent_usd",
+        "model": "random-legal-actions-v1-rng20261108",
+        "priced": false,
+        "usd": null
+      },
+      "effort": {
+        "decisions": 80,
+        "model_calls": 0,
+        "provider_responses": 0,
+        "refused_proposals": 8,
+        "refused_tool_call_total": 0,
+        "refused_tool_calls": {},
+        "tool_calls": {},
+        "wall_minutes": 2.700038
+      },
+      "evaluation": {
+        "learning_eligible": true,
+        "reason_count": 0,
+        "reasons": [],
+        "status": "valid"
+      },
+      "experiment": null,
+      "learning_eligible": true,
+      "model": "random-legal-actions-v1-rng20261108",
+      "namespace": "<ORA_ROOT>/outputs/ora-random-control-final",
+      "planned_rounds": 1,
+      "provider_profile": null,
+      "reasoning_effort": "none",
+      "run_dir": "<ORA_ROOT>/outputs/ora-random-control-final/runs/ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+      "run_id": "ora-random-control-final-libero-91fe71fa6df9--20261107T021122Z",
+      "sealed": true,
+      "state": "completed",
+      "task": "libero_goal-t00",
+      "termination": "robot_decision_budget",
+      "termination_authority": "experiment_budget",
+      "tokens": {
+        "cache_share": null,
+        "cached_input": null,
+        "input": null,
+        "output": null,
+        "reasoning_output": null,
+        "responses": 0,
+        "responses_without_usage": 0,
+        "source": "missing",
+        "uncached_input": null
+      },
+      "validity": "valid",
+      "warnings": []
+    }
+  ],
+  "schema": "ora.run-report.v1",
+  "tasks": [
+    {
+      "attempts": 1,
+      "cohorts": [
+        "ora-random-control-final-20261107"
+      ],
+      "context": {
+        "inline_images_per_request": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        },
+        "observation_text_bytes": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        },
+        "request_input_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "total": null
+        }
+      },
+      "cost": {
+        "label": "api_equivalent_usd",
+        "priced_runs": 0,
+        "unpriced_models": [
+          "random-legal-actions-v1-rng20261108"
+        ],
+        "unpriced_runs": 1,
+        "usd": null
+      },
+      "effort": {
+        "decisions": 80,
+        "model_calls": 0,
+        "provider_responses": 0,
+        "refused_proposals": 8,
+        "refused_tool_call_total": 0,
+        "refused_tool_calls": {},
+        "tool_calls": {},
+        "wall_minutes": 2.700038
+      },
+      "endings": {
+        "decision_budget": 1
+      },
+      "excluded_attempts": {},
+      "give_up_categories": {},
+      "key": {
+        "model": "random-legal-actions-v1-rng20261108",
+        "task": "libero_goal-t00"
+      },
+      "learning_eligible_runs": 1,
+      "models": [
+        "random-legal-actions-v1-rng20261108"
+      ],
+      "policy_finish": {},
+      "runs": 1,
+      "success_rate": 0.0,
+      "successes": 0,
+      "tokens": {
+        "cache_share": null,
+        "cached_input": null,
+        "input": null,
+        "output": null,
+        "reasoning_output": null,
+        "runs_without_tokens": 1,
+        "uncached_input": null
+      },
+      "valid_attempts": 1,
+      "valid_endings": {
+        "decision_budget": 1
+      },
+      "validity": {
+        "valid": 1
+      }
+    }
+  ],
+  "total": {
+    "attempts": 1,
+    "cohorts": [
+      "ora-random-control-final-20261107"
+    ],
+    "context": {
+      "inline_images_per_request": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      },
+      "observation_text_bytes": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      },
+      "request_input_tokens": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      }
+    },
+    "cost": {
+      "label": "api_equivalent_usd",
+      "priced_runs": 0,
+      "unpriced_models": [
+        "random-legal-actions-v1-rng20261108"
+      ],
+      "unpriced_runs": 1,
+      "usd": null
+    },
+    "effort": {
+      "decisions": 80,
+      "model_calls": 0,
+      "provider_responses": 0,
+      "refused_proposals": 8,
+      "refused_tool_call_total": 0,
+      "refused_tool_calls": {},
+      "tool_calls": {},
+      "wall_minutes": 2.700038
+    },
+    "endings": {
+      "decision_budget": 1
+    },
+    "excluded_attempts": {},
+    "give_up_categories": {},
+    "key": {
+      "scope": "selection"
+    },
+    "learning_eligible_runs": 1,
+    "models": [
+      "random-legal-actions-v1-rng20261108"
+    ],
+    "policy_finish": {},
+    "runs": 1,
+    "success_rate": 0.0,
+    "successes": 0,
+    "tokens": {
+      "cache_share": null,
+      "cached_input": null,
+      "input": null,
+      "output": null,
+      "reasoning_output": null,
+      "runs_without_tokens": 1,
+      "uncached_input": null
+    },
+    "valid_attempts": 1,
+    "valid_endings": {
+      "decision_budget": 1
+    },
+    "validity": {
+      "valid": 1
+    }
+  },
+  "warnings": []
+}

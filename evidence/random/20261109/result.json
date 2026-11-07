@@ -1,0 +1,60 @@
+{
+  "auxiliary_failures": [],
+  "behavioral_sample_valid": true,
+  "decisions": 80,
+  "environment_status": {
+    "phase": "running",
+    "policy_visibility": "control_only",
+    "reason": null,
+    "schema": "ora.environment-status.v1",
+    "signals": [],
+    "source": "libero_pro_session",
+    "terminal": false
+  },
+  "finished_unix_s": 1794017844.1727736,
+  "model_calls": 0,
+  "official_success": false,
+  "official_verdict_checker_divergence": null,
+  "operator_video": null,
+  "plan_sha256": "976751533947f7b1301c5fd119c6f1dbcf4052be01707aa7c8ee85a7e8fd7a1d",
+  "refused_proposals": 9,
+  "run_id": "ora-random-control-final-libero-976751533947--20261107T021431Z",
+  "schema": "ora.run-result.v1",
+  "started_unix_s": 1794017671.6657965,
+  "state": "completed",
+  "termination": "robot_decision_budget",
+  "termination_authority": "experiment_budget",
+  "verdict": {
+    "abort_reason": "robot_decision_budget",
+    "control_fault_reason": null,
+    "created_unix_s": 1794017844.140134,
+    "first_termination": null,
+    "official_success": false,
+    "robustness_case": null,
+    "robustness_events": 0,
+    "schema": "ora.libero-pro-official-verdict.v1",
+    "seed": 0,
+    "sim_steps": 1437,
+    "source": "LIBERO environment termination",
+    "suite": "libero_goal",
+    "task_id": 0,
+    "terminated": false,
+    "truncated": false
+  },
+  "wait_accounting": {
+    "dispatched_actions": 89,
+    "last_non_wait_action": {
+      "action": "move_pose",
+      "action_id": "action-8d1ea9c6aa91f629",
+      "index": 88
+    },
+    "native_actions": null,
+    "schema": "ora.round-wait-accounting.v1",
+    "terminal_wait_calls": 0,
+    "terminal_wait_native_actions": 0,
+    "wait_calls": 0,
+    "wait_native_actions": 0
+  },
+  "wall_duration_clock": "monotonic",
+  "wall_duration_s": 172.50698
+}

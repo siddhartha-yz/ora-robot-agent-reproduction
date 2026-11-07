@@ -1,0 +1,257 @@
+{
+  "cache": {
+    "cache_creation_input_tokens": null,
+    "cache_creation_telemetry_calls": 0,
+    "cache_read_hit_calls": 0,
+    "cache_read_input_tokens": null,
+    "cache_read_telemetry_calls": 0,
+    "call_cache_read_hit_rate": null,
+    "exchange_count": 0,
+    "input_tokens_with_cache_read_telemetry": null,
+    "measurement": "provider_reported_cache_telemetry",
+    "status": "missing",
+    "token_cache_read_ratio": null,
+    "uncached_input_tokens": null
+  },
+  "communication": null,
+  "context": {
+    "exchange_count": 0,
+    "harness_rollovers": 0,
+    "measurement": "provider_reported_exchange_input",
+    "model_context_window_tokens": null,
+    "native_compactions": 0,
+    "observed_input_headroom_tokens": null,
+    "peak_request_input_tokens": null,
+    "peak_request_input_utilization": null,
+    "request_input_tokens": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "total": null
+    },
+    "terminal_turn_input_growth_tokens": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "total": null
+    }
+  },
+  "harness_input": {
+    "images": {
+      "bytes": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      },
+      "count": 0,
+      "maximum_size_px": [],
+      "measurement": "exact_attachment_inventory",
+      "token_count": null,
+      "token_count_reason": "Provider does not report per-modality token usage",
+      "token_count_status": "missing"
+    },
+    "text": {
+      "characters": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      },
+      "later_turn_utf8_bytes": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      },
+      "measurement": "exact_project_owned_utf8",
+      "token_count": null,
+      "token_count_reason": "Codex tokenizer and request serialization are not exposed",
+      "token_count_status": "missing",
+      "utf8_bytes": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "total": null
+      }
+    }
+  },
+  "latency": {
+    "action_publish_to_receipt_s": {
+      "count": 89,
+      "max": 2.771586,
+      "mean": 0.982924,
+      "min": 0.017215,
+      "p50": 0.260972,
+      "p95": 2.129805,
+      "total": 87.480263
+    },
+    "agent_turn_s": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "total": null
+    },
+    "clock": {
+      "duration_source": "monotonic",
+      "unix_timestamps_are_ordering_evidence": true
+    },
+    "decision_cycle_s": {
+      "count": 89,
+      "max": 3.490899,
+      "mean": 1.707108,
+      "min": 0.516714,
+      "p50": 1.005424,
+      "p95": 2.897128,
+      "total": 151.932584
+    },
+    "environment_actuation_s": {
+      "count": 89,
+      "max": 2.754265,
+      "mean": 0.965808,
+      "min": 0.006685,
+      "p50": 0.244139,
+      "p95": 2.114289,
+      "total": 85.956874
+    },
+    "episode_wall_s": 172.576363,
+    "observation_pipeline_s": {
+      "count": 90,
+      "max": 0.575353,
+      "mean": 0.459628,
+      "min": 0.390744,
+      "p50": 0.458112,
+      "p95": 0.531132,
+      "total": 41.366529
+    },
+    "observation_to_turn_start_s": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "total": null
+    },
+    "receipt_to_observation_s": {
+      "count": 89,
+      "max": 0.593782,
+      "mean": 0.485189,
+      "min": 0.411917,
+      "p50": 0.478793,
+      "p95": 0.559356,
+      "total": 43.181787
+    },
+    "time_to_first_agent_event_s": null,
+    "time_to_first_agent_event_status": "missing",
+    "tool_call_s": {
+      "count": 89,
+      "max": 0.268482,
+      "mean": 0.173505,
+      "min": 0.008701,
+      "p50": 0.190758,
+      "p95": 0.240709,
+      "total": 15.441976
+    },
+    "turn_complete_to_action_publish_s": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "min": null,
+      "outer_actions": 89,
+      "p50": null,
+      "p95": null,
+      "pairing": "agent_action_proposed_model_call_id_to_outer_action_order",
+      "proposing_turns": 0,
+      "total": null
+    }
+  },
+  "measurement_errors": [],
+  "measurement_quality": {
+    "codex_internal_history": "opaque",
+    "codex_kv_cache": "opaque",
+    "harness_text": "exact_bytes",
+    "harness_text_tokens": "missing",
+    "image_inventory": "exact",
+    "image_tokens": "missing",
+    "provider_cache_telemetry": "missing",
+    "provider_usage": "missing",
+    "request_context": "missing"
+  },
+  "measurement_status": "partial",
+  "plan_sha256": "3ad89a7d6bcf2b57278835e2ba0dd0b381bc35083359c923c7db47aa1c554595",
+  "run_id": "ora-random-control-final-libero-3ad89a7d6bcf--20261107T020803Z",
+  "schema": "ora.runtime-metrics.v1",
+  "session": {
+    "backend": null,
+    "exit_reason": null,
+    "process_invocations": null,
+    "process_pid": null,
+    "process_restarts": null,
+    "session_id": null,
+    "thread_id": null,
+    "turns": 0
+  },
+  "source_artifacts": {
+    "agent_session": {
+      "path": "native/agent-session.json",
+      "sha256": null
+    },
+    "context_bundles": {
+      "count": 0,
+      "path": "context-bundles",
+      "sha256": null
+    },
+    "context_manifest": {
+      "path": "context-manifest.json",
+      "sha256": "d99fef52ea30bf102a332805025c4c96f5545470e062b976e6d5929c01c6a8f9"
+    },
+    "events": {
+      "path": "events.jsonl",
+      "sha256": "e2ddcd63a6df8b792641becb1e0ace97f1e1f38ad11899c25e720e84208227ae"
+    },
+    "plan": {
+      "path": "plan.json",
+      "sha256": "8a24e00946e31187c810ba0b3a1a24780abe688589a71f5c15e69717d61bebe1"
+    },
+    "result": {
+      "path": "result.json",
+      "sha256": "68c62fb0b480e5775b8e7cd2db99b5fd287b9423d59fd3edd43c3f58ddbd130a"
+    }
+  },
+  "turns": [],
+  "workload": {
+    "backend": null,
+    "cached_input_is_subset_of_input": true,
+    "cached_input_tokens": null,
+    "input_tokens": null,
+    "measurement": "provider_reported_cumulative_workload",
+    "output_tokens": null,
+    "reasoning_output_is_subset_of_output": true,
+    "reasoning_output_tokens": null,
+    "status": "missing",
+    "total_tokens": null,
+    "uncached_input_tokens": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "agent_session_manifest_sha256": "040cedd544acf7400ee36aed3422100ee6727c27f4b3a86aaa1c3305548cb8fe",
+  "agent_trace_final_event_sha256": "14b889a9c279924d58f5c57a23723fc1fa9e7f7109c76d388b27d2a4fed8495c",
+  "agent_trace_sha256": "9b276f226d6ab4e7a9d21f89bba85e4a4b7a4ca09422dc92a57a1dcbfd9ad404",
+  "context_artifact_provenance": {
+    "errors": [],
+    "evidence_gaps": [],
+    "issued_refs": 51,
+    "provider_requests": 16,
+    "schema": "ora.context-artifact-provenance.v1",
+    "status": "valid",
+    "successful_retrieved_refs": 0
+  },
+  "context_audit_sha256": "6e4f0a274e6bc2e8306c5ac6fd8e2d980466f6a4e9729431d97793d68bed7a4d",
+  "context_manifest_sha256": "2a5578fcf0af74d3979fb602a57bb61dbadf10f883b6fb53c6d9ee4e365494fd",
+  "counts": {
+    "actions": 7,
+    "motions": 7,
+    "observations": 8
+  },
+  "evidence_tier": "behavioral",
+  "learning_eligibility": {
+    "eligible": true,
+    "policy": "sealed_policy_visible_control_qualified_episode_v1",
+    "reasons": [],
+    "schema": "ora.learning-eligibility.v1"
+  },
+  "official_success": true,
+  "plan_sha256": "d8c68723d9b84312aa79e3ddc33c1daeef1f678e1623cfce0dc4c346a01625a6",
+  "policy_finish": [
+    {
+      "behavioral_sample_valid": true,
+      "category": null,
+      "ended_round": false,
+      "outcome": "success",
+      "reason_names_untried": null,
+      "round_index": 0,
+      "termination_authority": "environment"
+    }
+  ],
+  "policy_state_manifest_sha256": "27b35b54edbbb2f4aa8cf8f747b22125ffc253e80d857280dda0c4a2df650e0a",
+  "reasons": [],
+  "result_sha256": "fd8b6a653cb35d491456f3b4a0068aed2dddddbf555649543d6c6cb55938e0e9",
+  "run_id": "ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+  "runtime_metrics_sha256": "9ae8c6751e2c5729e6f48579b79baec5e9897e884c4f07ebfdc6942ffdd3ddde",
+  "schema": "ora.evaluation.v1",
+  "status": "valid",
+  "trace_sha256": "45072f1fb4c319079eac3d6397e927ab89f2d4b3ef88fcccf60bc6da8e0b9ea4"
+}

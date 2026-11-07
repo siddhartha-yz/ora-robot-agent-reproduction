@@ -1,0 +1,50 @@
+{
+  "run_id": "ora-interactive-libero-d8c68723d9b8--20261107T014312Z",
+  "model_call_id": "model-call-000002",
+  "source": "official request_archive.read_bytes, original sealed archived provider wire; field-only inspection",
+  "artifact_ref": "native/agent-artifacts/e54f9216228c0a8b04448c8320c969b7a663cf717426b0c727ef6c63174b7570.json",
+  "wire_model": "deepseek-flash",
+  "provider_continuation_replay": "exact_v1",
+  "context_profile": "native_causal_context_v1",
+  "context_reasoning_exclusion_changed_messages": [
+    5,
+    8
+  ],
+  "assistant_message_count": 2,
+  "messages": [
+    {
+      "original_model_call_id": "model-call-000000",
+      "wire_keys": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "content_chars": 0,
+      "reasoning_chars": 608,
+      "tool_names": [
+        "vision_ground"
+      ],
+      "content_equals_response": true,
+      "reasoning_equals_response": true,
+      "tool_calls_equal_response": true
+    },
+    {
+      "original_model_call_id": "model-call-000001",
+      "wire_keys": [
+        "content",
+        "reasoning_content",
+        "role",
+        "tool_calls"
+      ],
+      "content_chars": 124,
+      "reasoning_chars": 50874,
+      "tool_names": [
+        "geometry_query"
+      ],
+      "content_equals_response": true,
+      "reasoning_equals_response": true,
+      "tool_calls_equal_response": true
+    }
+  ]
+}

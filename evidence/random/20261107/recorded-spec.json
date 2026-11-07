@@ -1,0 +1,2190 @@
+{
+  "schema": "ora.run-spec.v1",
+  "experiment": "ora-random-control-final",
+  "config": "goal0-rng20261107",
+  "output_workspace": "outputs/ora-random-control-final",
+  "milestone": "LIBERO",
+  "task": "libero_goal-t00",
+  "task_instruction": "open the middle drawer of the cabinet",
+  "seed": 0,
+  "evidence_tier": "behavioral",
+  "policy": {
+    "kind": "scripted",
+    "model": "random-legal-actions-v1-rng20261107",
+    "provider": "python-random-no-api",
+    "reasoning_effort": "none",
+    "tool_surface": {
+      "profile": "libero_placement_direct_overhead_v1",
+      "component_overrides": {}
+    },
+    "action_codec": "motion_action_v3",
+    "actions": [
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.226387,
+          0.033941,
+          1.143161
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.187438,
+          0.048983,
+          1.182107
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.210381,
+          0.014985,
+          1.220951
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.206339,
+          0.049357,
+          1.235807
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.195995,
+          0.085323,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.183754,
+          0.095438,
+          1.22857
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.145658,
+          0.059281,
+          1.229897
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.179841,
+          0.056033,
+          1.222808
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.140289,
+          0.081463,
+          1.231822
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.131084,
+          0.059152,
+          1.192749
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.142326,
+          0.06492,
+          1.227682
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.159544,
+          0.103734,
+          1.207591
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.165751,
+          0.118682,
+          1.235194
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.144884,
+          0.07889,
+          1.247132
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.1087,
+          0.115114,
+          1.22818
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.120771,
+          0.120408,
+          1.235936
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.120771,
+          0.120408,
+          1.235936
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 22.906467,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.135595,
+          0.133906,
+          1.249885
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.116636,
+          0.136257,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.089667,
+          0.150381,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.089909,
+          0.171122,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.089909,
+          0.171122,
+          1.25
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 2.30254,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.119656,
+          0.20821,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.088863,
+          0.204056,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.095435,
+          0.170756,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.092311,
+          0.142242,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.106407,
+          0.103452,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.074383,
+          0.105641,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.073361,
+          0.08317,
+          1.233345
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.053989,
+          0.098834,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.053989,
+          0.098834,
+          1.25
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": 26.786734,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.074638,
+          0.080484,
+          1.241811
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.074638,
+          0.080484,
+          1.241811
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": -27.356394,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.0919,
+          0.0553,
+          1.218449
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.0919,
+          0.0553,
+          1.218449
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": 13.547757,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.105669,
+          0.067237,
+          1.231496
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.105669,
+          0.067237,
+          1.231496
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": -13.464999,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.110931,
+          0.031252,
+          1.228606
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.143597,
+          0.028199,
+          1.236682
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.178204,
+          0.031755,
+          1.209411
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.148646,
+          -0.005656,
+          1.198457
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.148646,
+          -0.005656,
+          1.198457
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 15.98224,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.183726,
+          0.026892,
+          1.195017
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.191578,
+          0.060309,
+          1.19614
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.184546,
+          0.061054,
+          1.159005
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.184546,
+          0.061054,
+          1.159005
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": -1.952604,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.169695,
+          0.079868,
+          1.135555
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.207328,
+          0.119588,
+          1.153759
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.207328,
+          0.119588,
+          1.153759
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": -4.435855,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.172431,
+          0.136604,
+          1.173297
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.181822,
+          0.169285,
+          1.162885
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.216253,
+          0.204501,
+          1.143604
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.23617,
+          0.22908,
+          1.18026
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.257432,
+          0.203714,
+          1.156036
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.287056,
+          0.168731,
+          1.138178
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.308486,
+          0.169813,
+          1.168546
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.282764,
+          0.167077,
+          1.16536
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.24986,
+          0.129206,
+          1.167362
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.241049,
+          0.153463,
+          1.152855
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.201463,
+          0.18894,
+          1.14411
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.238002,
+          0.214686,
+          1.16224
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.239466,
+          0.225824,
+          1.145325
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.219867,
+          0.258362,
+          1.121281
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.237037,
+          0.234969,
+          1.126316
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.210713,
+          0.27191,
+          1.108009
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.24182,
+          0.262935,
+          1.10369
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.21684,
+          0.249724,
+          1.140978
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.190596,
+          0.243627,
+          1.178083
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.215353,
+          0.264657,
+          1.158946
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.243867,
+          0.234838,
+          1.190211
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.282768,
+          0.266247,
+          1.214665
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.24703,
+          0.284178,
+          1.231289
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.236306,
+          0.277659,
+          1.209531
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.250819,
+          0.299028,
+          1.237809
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.24709,
+          0.308201,
+          1.244448
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.248136,
+          0.289972,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.272794,
+          0.257099,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.275748,
+          0.235471,
+          1.224105
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.291544,
+          0.203936,
+          1.219128
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.259674,
+          0.227028,
+          1.198693
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.259674,
+          0.227028,
+          1.198693
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": -11.743004,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.285022,
+          0.251154,
+          1.201773
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.261999,
+          0.225198,
+          1.200928
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.261999,
+          0.225198,
+          1.200928
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": -11.131449,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.267982,
+          0.222626,
+          1.193352
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.284708,
+          0.188958,
+          1.227309
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.27704,
+          0.219448,
+          1.201703
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.242134,
+          0.202485,
+          1.22731
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.244548,
+          0.186165,
+          1.223015
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.248405,
+          0.204134,
+          1.215647
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.248405,
+          0.204134,
+          1.215647
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 28.947448,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.267956,
+          0.222549,
+          1.193558
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.267956,
+          0.222549,
+          1.193558
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": -8.834845,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.267956,
+          0.222549,
+          1.193558
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 12.035783,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.267956,
+          0.222549,
+          1.193558
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": -11.86851,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.253644,
+          0.225844,
+          1.215984
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.253644,
+          0.225844,
+          1.215984
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": -25.693115,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.26993,
+          0.226881,
+          1.217902
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.26638,
+          0.197876,
+          1.199023
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.26638,
+          0.197876,
+          1.199023
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": 10.048526,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.26638,
+          0.197876,
+          1.199023
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": -8.121857,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.282421,
+          0.16805,
+          1.22197
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.279496,
+          0.146585,
+          1.223979
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.279496,
+          0.146585,
+          1.223979
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 14.953846,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.289644,
+          0.186455,
+          1.241238
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.289644,
+          0.186455,
+          1.241238
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": 25.011949,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.306094,
+          0.184799,
+          1.221858
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.276588,
+          0.173956,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.271364,
+          0.145299,
+          1.25
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.277636,
+          0.117706,
+          1.218747
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.248385,
+          0.107229,
+          1.234623
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.249966,
+          0.132677,
+          1.198234
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.215033,
+          0.149997,
+          1.16932
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.226027,
+          0.122691,
+          1.169519
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.187906,
+          0.141369,
+          1.196004
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.164442,
+          0.141159,
+          1.169356
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.164442,
+          0.141159,
+          1.169356
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "y",
+        "rotation_angle_deg": 10.307963,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.167881,
+          0.139718,
+          1.144793
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.170895,
+          0.123097,
+          1.14719
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.149934,
+          0.111113,
+          1.114871
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.139523,
+          0.107746,
+          1.102534
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.149226,
+          0.107051,
+          1.122739
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.110155,
+          0.13701,
+          1.131808
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.110113,
+          0.114026,
+          1.096379
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.13577,
+          0.128043,
+          1.060376
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.135767,
+          0.126318,
+          1.023824
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.128173,
+          0.092549,
+          1.017995
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.164786,
+          0.088395,
+          1.021739
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.172395,
+          0.080626,
+          1.000616
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.172395,
+          0.080626,
+          1.000616
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": 29.820865,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.20208,
+          0.042674,
+          0.96341
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.20853,
+          0.06908,
+          0.959292
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.218526,
+          0.108043,
+          0.948974
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.239034,
+          0.069733,
+          0.950657
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.239034,
+          0.069733,
+          0.950657
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "x",
+        "rotation_angle_deg": -2.461303,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.227783,
+          0.033512,
+          0.978279
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.234934,
+          0.042207,
+          0.954369
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.244382,
+          0.053332,
+          0.968533
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.214625,
+          0.073603,
+          0.931697
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.195879,
+          0.081559,
+          0.904256
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.171709,
+          0.0722,
+          0.932689
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.156041,
+          0.077975,
+          0.960417
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.1834,
+          0.114665,
+          0.991163
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.155226,
+          0.089919,
+          0.974339
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.18875,
+          0.125235,
+          0.99516
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.16648,
+          0.162449,
+          0.978462
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.136467,
+          0.14755,
+          1.008394
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.107295,
+          0.171263,
+          1.003381
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.104835,
+          0.147965,
+          0.999612
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.104835,
+          0.147965,
+          0.999612
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": 13.320495,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.11744,
+          0.143651,
+          0.965497
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.138264,
+          0.114049,
+          0.950365
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.177716,
+          0.134857,
+          0.935634
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "close"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.199531,
+          0.172459,
+          0.925173
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.171001,
+          0.14262,
+          0.937631
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.177706,
+          0.155023,
+          0.897713
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.208848,
+          0.139857,
+          0.876452
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.218206,
+          0.126496,
+          0.864013
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.197745,
+          0.091135,
+          0.881454
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.170348,
+          0.075104,
+          0.90534
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.163871,
+          0.088269,
+          0.922029
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.147816,
+          0.061738,
+          0.918727
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "set_gripper",
+        "action": "open"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.181128,
+          0.042892,
+          0.950849
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.219786,
+          0.004432,
+          0.924617
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.227962,
+          0.032036,
+          0.918189
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.193582,
+          0.006841,
+          0.943659
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.210586,
+          -0.029748,
+          0.925322
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.210586,
+          -0.029748,
+          0.925322
+        ],
+        "orientation_mode": "axis_angle_delta",
+        "rotation_axis": "z",
+        "rotation_angle_deg": 14.594972,
+        "orientation_frame": "world",
+        "interaction": "precision"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.240267,
+          -0.032272,
+          0.938525
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "contact_approach"
+      },
+      {
+        "tool": "move_pose",
+        "position_mode": "absolute",
+        "position_m": [
+          -0.223906,
+          -0.059315,
+          0.970645
+        ],
+        "orientation_mode": "hold_current",
+        "interaction": "free_space"
+      }
+    ]
+  },
+  "runtime": {
+    "kind": "libero_pro",
+    "required_host": "single-gpu",
+    "resource_profile": "libero-gpu0",
+    "suite": "libero_goal",
+    "task_id": 0,
+    "expected_task_language": "open the middle drawer of the cabinet",
+    "task_language_divergence_ack": {
+      "bddl_task_language": "Open the middle layer of the drawer",
+      "policy_task_language": "open the middle drawer of the cabinet",
+      "review": "official base-suite instruction: the original LIBERO evaluation feeds the policy Task.language, which the benchmark registry derives from the BDDL file name; the file's (:language) rewords the same objects and the same goal predicate (wording-only class, docs/knowhow/debug-solutions/goal-authoritative-task-language.md); the 30 differing base rows (5 differ only in capitalisation) audited against their goal atoms 2026-10-07"
+    },
+    "transport": "local_rpc",
+    "python_env": "LIBERO_PRO_PYTHON",
+    "libero_pro_root_env": "LIBERO_PRO_ROOT",
+    "data_root_env": "LIBERO_PRO_DATA_ROOT",
+    "required_libero_pro_revision": "2b910b5b5f53016bef9907632f6f840f1ce2229c",
+    "required_data_revision": "c86fc3b8293185a6f373677018ff3e37f8391602",
+    "require_gpu": true,
+    "main_camera": "agentview",
+    "policy_cameras": [
+      "agentview",
+      "wrist"
+    ],
+    "controlled_end_effector": "right",
+    "startup_timeout_s": 600,
+    "request_timeout_s": 1800,
+    "servo_max_steps": 80,
+    "workspace_profile": "libero_pro_panda_hybrid_motion_v1",
+    "motion_planner": {
+      "backend": "curobo_motion_gen",
+      "version": "v0.7.8",
+      "python_env": "CUROBO_PYTHON",
+      "root_env": "CUROBO_ROOT",
+      "required_revision": "d64c4b005459db10c5dd867d8b30a87d5bda9bdb",
+      "request_timeout_s": 180,
+      "world_model": "none"
+    },
+    "motion_profile": {
+      "path": "ora/policy/embodiments/franka-panda/motion-profile-v2.json",
+      "sha256": "30df8c9ba91abc23c8ebdbf3977bf20604441e6bbe853ee6dad618074f8548ea"
+    },
+    "environment_driver": "direct_libero_v1",
+    "public_environment_context": {
+      "schema": "ora.public-environment-context.v1",
+      "environment_id": "libero_pro",
+      "embodiment_id": "franka_panda",
+      "robot_models": [
+        "Panda"
+      ],
+      "controller": "CUROBO_JOINT_POSITION+OSC_POSE",
+      "public_cameras": [
+        "agentview",
+        "wrist"
+      ]
+    },
+    "environment_prompt_profile": {
+      "schema": "ora.environment-prompt-profile.v1",
+      "profile_id": "libero_pro_public_direct_v1",
+      "profile_path": "ora/policy/environments/libero_pro/context-profile-public-direct-v1.json",
+      "profile_sha256": "e074c4666ae93e5fcfb9d8fcf31d067c389fc1d4df09a32ceb951b642e01f373",
+      "metadata_sha256": "0148b7f5b919bb9678d99ace0388af8974db6d93276f9c295ec81c2334dcdbb6"
+    }
+  },
+  "budgets": {
+    "max_robot_decisions": 80,
+    "max_model_calls": 200,
+    "max_sim_steps": 10000,
+    "wall_time_s": 21600
+  },
+  "qualification": {
+    "required": false
+  },
+  "prerequisite": {
+    "capability_scope": [
+      "resident_sam3_point_segmentation_v1",
+      "resident_sam3_text_grounding_v1",
+      "resident_contact_graspnet_v1"
+    ]
+  },
+  "launch_admission": {
+    "schema": "ora.run-launch-admission.v1",
+    "mode": "single_attempt_cell",
+    "cohort_id": "ora-random-control-final-20261107",
+    "cell_id": "goal0-rng20261107",
+    "retry_allowed": false
+  },
+  "policy_context": {
+    "codex_project": [
+      "ora/policy/core/evidence-action-loop-v8.md",
+      "ora/policy/environments/libero_pro/boundary-v2.md",
+      "ora/policy/embodiments/franka-panda/manual-public-geometry-v3.md"
+    ],
+    "episode_prefix": [
+      "ora/policy/planners/native/policy-v5.md",
+      "ora/policy/prompt_bundles/templates/episode-task-v2.md"
+    ],
+    "tool_manual": [
+      "ora/policy/prompt_bundles/templates/tool-schema-delivery-v1.md"
+    ]
+  }
+}
